@@ -4,7 +4,8 @@
 
 ## Contexte
 
-✏️ *En cinq à huit phrases : qui utilise l'outil (son métier, son geste professionnel), son besoin, ce qu'il saisit, ce que le programme lui affiche, ce que l'outil ne fait pas.*
+L'outil est utulisé par le responsable de la pépinière pédagogique.Son besoin professionel est de structurer un inventaire dispersé et d'appliquer une classification botanique. l'utilisateur enregistre dans le programme du relevé. il veut afficher les quantités disponibles en stock pour chaque espèce. le programme affiche l'inventaire et les quantités disponible, le groupe botanique.l'outil ne prend pas en charge les cas incertains.
+
 
 ## Prérequis et lancement
 

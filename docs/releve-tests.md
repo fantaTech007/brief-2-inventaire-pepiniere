@@ -2,7 +2,10 @@
 
 > Écrivez le résultat attendu avant d'essayer. Un écart n'est pas une faute : notez-le, corrigez, refaites le test.
 
-**Calculs à la main** : refaites à la main les résultats de référence de `SUJET.md`, puis comparez avec votre programme. ✏️
+nombre espèce: 10 espéce
+nombre des gynospermes : 10+8 = 18 plants
+nombre des angyospermes: 30+45+20+50+25+18+12+22 = 222 plants
+les lignes à 10 plants sont: N09 = 8 plants et N10 = 10 plants
 
 **Essais dans le menu** : un ajout valide (encore là après redémarrage), chaque règle refusée, une recherche introuvable, chaque tri, la synthèse, un choix inconnu.
 

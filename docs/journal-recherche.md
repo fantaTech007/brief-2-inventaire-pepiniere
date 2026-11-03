@@ -4,6 +4,15 @@
 
 | Ce que je cherchais | Où | Ce que j'ai compris | Utilisé dans |
 | --- | --- | --- | --- |
-| ✏️ | | | |
-| ✏️ | | | |
-| ✏️ | | | |
+SIGINT
+| setPrompt | | | |
+| trim| | | |
+| assert.equal| | | |
+|test|
+|async function main|
+|deepEqual(ids)|
+JSON.parse
+assert.notEqual
+await rm
+await assert.rejects
+node:assert/strict
