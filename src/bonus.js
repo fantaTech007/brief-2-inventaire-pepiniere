@@ -8,6 +8,7 @@ import { syntheseParGroupe } from './synthese.js';
 // Les champs qu'on a le droit de modifier. L'identifiant n'en fait pas partie.
 export const CHAMPS_MODIFIABLES = ['nomCommun', 'groupe', 'nombrePlants', 'dateReleve'];
 
+
 // Supprime de l'inventaire le plant qui a cet identifiant.
 // Renvoie le plant supprimé, ou undefined s'il n'existe pas (l'inventaire ne change pas).
 export function supprimerPlant(plants, id) {
