@@ -113,7 +113,14 @@ async function main() {
         break
 
         case "4":
-          console.log('TODO : coder trier');
+          const reponseJ = await demander("Rentrez le groupe botanique que vous voulez trier : ");
+          if(GROUPES.includes(reponseJ.toLowerCase())){
+            const tableau_filtre = filtrerParGroupe(chargement , reponseJ.toLowerCase());
+            console.log(`${tableau_filtre.length} du groupe ${reponseJ.toLowerCase()} :`)
+            console.log(listerPlants(trierParNombrePlants(tableau_filtre)))
+          } else {
+            console.log("Ce groupe n'est pas valide")
+          }
         break
 
         case "5":
