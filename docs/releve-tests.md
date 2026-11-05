@@ -11,13 +11,13 @@ les resultats des calculs à la main sont conformes aux resultats du code d'orig
 
 **Essais dans le menu** : un ajout valide (encore là après redémarrage), chaque règle refusée, une recherche introuvable, chaque tri, la synthèse, un choix inconnu.
 
-| Action | Attendu | Obtenu | Testeur |
-| --- | --- | --- | --- |
-| ✏️ | | | |
-| ✏️ | | | |
-| ✏️ | | | |
-| ✏️ | | | |
-| ✏️ | | | |
-| ✏️ | | | |
+| Action                   | Attendu                                | Obtenu                               | Testeur  |
+| Lister inventaire        |N01-N12                                 | N01-N12                              | ---      |
+|Rechercher par code(N01)  |cacao,angiosperme,30 plants,2026-10-24| |cacao,angiosperme,30 plants,2026-10-24| KAMAGATE ABDALLAH SALIA |
+|Trier gymnosperme         |N09,N10,N12                             |N09,N10,N12                           |KAMAGATE ABDALLAH SALIA|
+|Synthèse des quantités    |N09,N10                                 ||N09,N10                              |FATOUMATA KONE |
+| Rechercher par nom(cacao)|N01                                     |N01                                   | FATOUMATA KONE |
+|Trier angiosperme         |N07,N06,N03,N08,N05,N01,N02,N04,N11     |N07,N06,N03,N08,N05,N01,N02,N04,N11   |FATOUMATA KONE|
+|Quitter                   |Sortie du programme                     |Sortie du programme                   |FATOUMATA KONE |
 
 **Sur un autre poste** (`git clone`, `node app.js`, `npm test`, en suivant le README) : ✏️
