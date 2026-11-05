@@ -12,5 +12,5 @@ export async function chargerJson(chemin) {
 // Écrit le tableau dans le fichier, au format JSON indenté de 2 espaces.
 export async function enregistrerJson(chemin, enregistrements) {
   const fichiers_enregistres = JSON.stringify(enregistrements,null,2);
-  return writeFile (chemin,fichiers_enregistres,"utf8")
+  return await writeFile(chemin,fichiers_enregistres,"utf8")
 }

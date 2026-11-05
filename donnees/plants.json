@@ -68,5 +68,19 @@
     "groupe": "gymnosperme",
     "nombrePlants": 10,
     "dateReleve": "2026-10-24"
+  },
+  {
+    "id": "N11",
+    "nomCommun": "papayer",
+    "groupe": "angiosperme",
+    "nombrePlants": 111,
+    "dateReleve": "2026-11-05"
+  },
+  {
+    "id": "N12",
+    "nomCommun": "test",
+    "groupe": "gymnosperme",
+    "nombrePlants": 11,
+    "dateReleve": "2026-11-05"
   }
 ]

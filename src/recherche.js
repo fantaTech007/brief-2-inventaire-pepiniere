@@ -20,6 +20,5 @@ export function filtrerParGroupe(plants, groupe) {
 // Deux plants de même nombre gardent leur ordre d'origine. Le tableau reçu ne doit pas changer d'ordre.
 export function trierParNombrePlants(plants) {
   const nombre = [...plants];
-  nombre.sort((a,b)=>a.nombrePlants-b.nombrePlants);
-  return nombre
+ return nombre.sort((a,b)=>a.nombrePlants-b.nombrePlants);
 }
