@@ -124,7 +124,25 @@ async function main() {
         break
 
         case "5":
-          console.log('TODO : coder Synthèse');
+          console.log("--- Synthèse de l'inventaire ---");
+          if(chargement.length === 0){
+            console.log("inventaire vide")
+          } else {
+            console.log(`Nombre d'espèces : ${chargement.length}`);
+            console.log(`Stock total : ${totalPlants(chargement)}`);
+            console.table(syntheseParGroupe(chargement));
+            console.log(`Espèce la plus abondante : ${formaterPlant(especeLaPlusAbondante(chargement))}`);
+            if(stocksFaibles(chargement, SEUIL_STOCK_FAIBLE).length > 0){
+              console.log(`Stocks faibles (≤ ${SEUIL_STOCK_FAIBLE} plants) : ${stocksFaibles(chargement, SEUIL_STOCK_FAIBLE).length}`);
+              console.log(listerPlants(stocksFaibles(chargement, SEUIL_STOCK_FAIBLE)))
+              console.log(`Rappel : le seuil de ${SEUIL_STOCK_FAIBLE} plants est un repère pédagogique de suivi, pas une recommandation de production.`)
+            } else {
+              console.log(`Aucun plant n'a de valeur inférieur au seuil de ${SEUIL_STOCK_FAIBLE} plants`);
+            }
+            
+
+
+          }
         break
        
         default:
