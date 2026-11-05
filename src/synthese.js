@@ -7,7 +7,7 @@ export const SEUIL_STOCK_FAIBLE = 10;
 
 // Renvoie le nombre total de plants. Liste vide : 0.
 export function totalPlants(plants) {
-  return plants.reduce((accu,plant)=>(accu+plant.nombrePlants, 0)) 
+  return plants.reduce((accu,plant)=>accu+plant.nombrePlants, 0) 
 }
 
 // Renvoie un objet : pour chaque groupe, le nombre d'espèces (de lignes) et le total de plants.
@@ -40,5 +40,14 @@ return stock
 // le premier rencontré en cas d'égalité, ou null si l'inventaire est vide.
 // Exemple : especeLaPlusAbondante(donnees) → N04 (tomate, 50 plants)
 export function especeLaPlusAbondante(plants) {
-  throw new Error('TODO : coder especeLaPlusAbondante dans src/synthese.js');
+   if(plants.length===0){
+    return null;
+  }
+  const plusAbondan=plants.reduce((max,courant)=>
+  {if(courant.nombrePlants>max.nombrePlants){
+    return courant;
+  }
+  return max;})
+return plusAbondan
+
 }
