@@ -7,7 +7,7 @@ export const SEUIL_STOCK_FAIBLE = 10;
 
 // Renvoie le nombre total de plants. Liste vide : 0.
 export function totalPlants(plants) {
-  throw new Error('TODO : coder totalPlants dans src/synthese.js');
+  return plants.reduce((accu,plant)=>(accu+plant.nombrePlants, 0)) 
 }
 
 // Renvoie un objet : pour chaque groupe, le nombre d'espèces (de lignes) et le total de plants.

@@ -76,7 +76,40 @@ async function main() {
         break
 
         case "3":
-          console.log('TODO : coder Rechercher');
+          const reponseF = await demander("--- Rechercher --- \n 1. Par code \n 2. Par nom commun \n 3. Les espèces d'un groupe botanique \n Votre choix : ");
+          switch (reponseF){
+            case "1":
+              const reponseG = await demander("Code : ");
+              const trouver_plant_code = trouverParId(chargement , reponseG.toUpperCase());
+              if(!trouver_plant_code){
+                console.log("cet élément n'existe pas")
+              } else {
+                const formatage = formaterPlant(trouver_plant_code);
+                console.log(formatage)                
+              }
+            break
+            case "2":
+              const reponseH = await demander("Nom commun : ");
+              const trouver_plant_nomCommun = rechercherParNom(chargement , reponseH.toLowerCase());
+              if(trouver_plant_nomCommun.length > 0){
+                console.log(listerPlants(trouver_plant_nomCommun))
+              } else {
+                console.log("cet élément n'existe pas")             
+              }
+            break
+            case "3":
+              const reponseI = await demander("groupe botanique : ");
+              if(!GROUPES.includes(reponseI)){
+                console.log("groupe inconnu")
+              } else {
+                const filtres = filtrerParGroupe(chargement, reponseI)
+                console.log(listerPlants(filtres))
+              }
+            break
+            default:
+              console.log("Choix inconnu : retour au menu. ")
+            break
+          }
         break
 
         case "4":
