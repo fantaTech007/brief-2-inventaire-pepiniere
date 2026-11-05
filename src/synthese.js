@@ -14,8 +14,21 @@ export function totalPlants(plants) {
 // Exemple : { angiosperme: { especes: 8, plants: 222 }, gymnosperme: { especes: 2, plants: 18 } }
 // Liste vide : {} (un objet vide).
 export function syntheseParGroupe(plants) {
-  throw new Error('TODO : coder syntheseParGroupe dans src/synthese.js');
+ const resultat={};
+  for(const plant of plants){
+    const groupe=plant.groupe;
+    if(!resultat[groupe]){
+      resultat[groupe]={
+        especes:0,
+        plants:0
+      };
+    }
+    resultat[groupe].especes++;
+    resultat[groupe].plants+=plant.nombrePlants;
+  }
+  return resultat;
 }
+
 
 // Renvoie un NOUVEAU tableau avec les plants dont le nombre est INFÉRIEUR OU ÉGAL au seuil.
 // Exemple : stocksFaibles(donnees, 10) → N09 (8 plants) et N10 (10 plants)
